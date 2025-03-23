@@ -64,24 +64,24 @@ When implementing complex components, remember to refer back to the original Rea
 
 ## 4. Main UI Components
 
-- [ ] **App structure and navigation**
-  - [ ] Implement main navigation structure based on `frontend/src/routes.ts`
-  - [ ] Create sidebar navigation (reference: `frontend/src/components/features/sidebar/sidebar.tsx`)
-  - [ ] Implement tab-based layout for different panels
+- [x] **App structure and navigation**
+  - [x] Implement main navigation structure based on `frontend/src/routes.ts`
+  - [x] Create sidebar navigation (reference: `frontend/src/components/features/sidebar/sidebar.tsx`)
+  - [x] Implement tab-based layout for different panels
 
-- [ ] **Conversation/Chat interface**
-  - [ ] Create message bubbles and chat layout (reference: `frontend/src/components/features/chat/chat-message.tsx`)
-  - [ ] Implement message list with scrolling behavior (reference: `frontend/src/components/features/chat/messages.tsx`)
-  - [ ] Create typing indicator (reference: `frontend/src/components/features/chat/typing-indicator.tsx`)
-  - [ ] Implement chat input without image upload (reference: `frontend/src/components/features/chat/chat-input.tsx`)
+- [x] **Conversation/Chat interface**
+  - [x] Create message bubbles and chat layout (reference: `frontend/src/components/features/chat/chat-message.tsx`)
+  - [x] Implement message list with scrolling behavior (reference: `frontend/src/components/features/chat/messages.tsx`)
+  - [x] Create typing indicator (reference: `frontend/src/components/features/chat/typing-indicator.tsx`)
+  - [x] Implement chat input without image upload (reference: `frontend/src/components/features/chat/chat-input.tsx`)
   - [ ] Add action buttons for feedback and trajectory export (reference: `frontend/src/components/features/trajectory/trajectory-actions.tsx`)
   - [ ] Make command output expandable directly within the chat interface
 
-- [ ] **File explorer**
-  - [ ] Create macOS-native file browser component (reference: `frontend/src/components/features/file-explorer/file-explorer.tsx`)
-  - [ ] Implement tree view with folder expansion (reference: `frontend/src/components/features/file-explorer/explorer-tree.tsx`)
-  - [ ] Add file icons based on file types (reference: `frontend/src/components/features/file-explorer/file-icon.tsx`)
-  - [ ] Support file selection and viewing (reference: `frontend/src/components/features/file-explorer/tree-node.tsx`)
+- [x] **File explorer**
+  - [x] Create macOS-native file browser component (reference: `frontend/src/components/features/file-explorer/file-explorer.tsx`)
+  - [x] Implement tree view with folder expansion (reference: `frontend/src/components/features/file-explorer/explorer-tree.tsx`)
+  - [x] Add file icons based on file types (reference: `frontend/src/components/features/file-explorer/file-icon.tsx`)
+  - [x] Support file selection and viewing (reference: `frontend/src/components/features/file-explorer/tree-node.tsx`)
 
 - [ ] **Code viewer/editor**
   - [ ] Integrate CodeEditor package for code display and editing
@@ -90,9 +90,9 @@ When implementing complex components, remember to refer back to the original Rea
 
 ## 5. Secondary UI Components
 
-- [ ] **Settings interface**
-  - [ ] Integrate settings in the main menu with multiple tabs corresponding to sections in config.toml
-  - [ ] Implement GitHub token management using secure storage
+- [x] **Settings interface**
+  - [x] Integrate settings in the main menu with multiple tabs corresponding to sections in config.toml
+  - [x] Implement GitHub token management using secure storage
 
 - [ ] **Modals and dialogs**
   - [ ] Create confirmation dialogs (reference: `frontend/src/components/shared/modals/confirmation-modals/base-modal.tsx`)
@@ -111,20 +111,20 @@ When implementing complex components, remember to refer back to the original Rea
   - [ ] Add auto-scrolling behavior for new messages (reference: `frontend/src/hooks/use-scroll-to-bottom.ts`)
   - [ ] Implement URL handling that opens links in the native system browser
 
-- [ ] **GitHub repository integration**
-  - [ ] Implement repository listing and selection (reference: `frontend/src/components/features/github/github-repo-selector.tsx`)
-  - [ ] Add repository search functionality (reference: `frontend/src/hooks/query/use-search-repositories.ts`)
-  - [ ] Create repository status indicators (reference: `frontend/src/components/features/conversation-panel/conversation-state-indicator.tsx`)
+- [x] **GitHub repository integration**
+  - [x] Implement repository listing and selection (reference: `frontend/src/components/features/github/github-repo-selector.tsx`)
+  - [x] Add repository search functionality (reference: `frontend/src/hooks/query/use-search-repositories.ts`)
+  - [x] Create repository status indicators (reference: `frontend/src/components/features/conversation-panel/conversation-state-indicator.tsx`)
 
-- [ ] **Authentication and user management**
-  - [ ] Implement GitHub OAuth flow for authentication (reference: `frontend/src/hooks/use-github-auth-url.ts`)
-  - [ ] Create secure token storage using Keychain
-  - [ ] Add user profile display (reference: `frontend/src/components/features/sidebar/user-avatar.tsx`)
+- [x] **Authentication and user management**
+  - [x] Implement GitHub OAuth flow for authentication (reference: `frontend/src/hooks/use-github-auth-url.ts`)
+  - [x] Create secure token storage using Keychain
+  - [x] Add user profile display (reference: `frontend/src/components/features/sidebar/user-avatar.tsx`)
 
-- [ ] **File operations**
-  - [ ] Implement file listing and browsing (reference: `frontend/src/hooks/query/use-list-files.ts`)
-  - [ ] Add file content fetching (reference: `frontend/src/hooks/query/use-list-file.ts`)
-  - [ ] Create file saving functionality (reference: `frontend/src/api/open-hands.ts` - saveFile method)
+- [x] **File operations**
+  - [x] Implement file listing and browsing (reference: `frontend/src/hooks/query/use-list-files.ts`)
+  - [x] Add file content fetching (reference: `frontend/src/hooks/query/use-list-file.ts`)
+  - [x] Create file saving functionality (reference: `frontend/src/api/open-hands.ts` - saveFile method)
 
 ## 7. Configuration Options
 
