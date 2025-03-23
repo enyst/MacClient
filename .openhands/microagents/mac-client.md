@@ -14,53 +14,53 @@ When implementing complex components, remember to refer back to the original Rea
 
 ## 1. Project Setup and Environment
 
-- [ ] **Create a new macOS SwiftUI application**
-  - [ ] Use Xcode to create a new macOS app with SwiftUI architecture
-  - [ ] Set up the project with a minimum deployment target of macOS 15.0 (Sequoia)
+- [x] **Create a new macOS SwiftUI application**
+  - [x] Use Xcode to create a new macOS app with SwiftUI architecture
+  - [x] Set up the project with a minimum deployment target of macOS 15.0 (Sequoia)
 
-- [ ] **Define basic architecture patterns**
-  - [ ] Replace Redux with a combination of SwiftUI's @State, @ObservableObject, and @EnvironmentObject for state management
-  - [ ] Use Swift's Combine framework for asynchronous operations instead of React's async patterns
-  - [ ] Create a services layer for networking and WebSocket communication
+- [x] **Define basic architecture patterns**
+  - [x] Replace Redux with a combination of SwiftUI's @State, @ObservableObject, and @EnvironmentObject for state management
+  - [x] Use Swift's Combine framework for asynchronous operations instead of React's async patterns
+  - [x] Create a services layer for networking and WebSocket communication
 
-- [ ] **Set up package dependencies**
-  - [ ] Add Alamofire for HTTP networking (similar to Axios)
-  - [ ] Add Starscream for WebSocket communication
-  - [ ] Add KeychainAccess for secure credential storage
-  - [ ] Add CodeEditor for code editing capabilities (similar to Monaco)
+- [x] **Set up package dependencies**
+  - [x] Add Alamofire for HTTP networking (similar to Axios)
+  - [x] Add Starscream for WebSocket communication
+  - [x] Add KeychainAccess for secure credential storage
+  - [x] Add CodeEditor for code editing capabilities (similar to Monaco)
 
 ## 2. Core Models and State Management
 
-- [ ] **Create data models**
-  - [ ] Models for agent state (reference: `frontend/src/state/agent-slice.ts`)
-  - [ ] Models for chat messages (reference: `frontend/src/state/chat-slice.ts`)
-  - [ ] Models for file state (reference: `frontend/src/state/file-state-slice.ts`)
-  - [ ] Models for commands (reference: `frontend/src/state/command-slice.ts`)
-  - [ ] Models for metrics (reference: `frontend/src/state/metrics-slice.ts`)
+- [x] **Create data models**
+  - [x] Models for agent state (reference: `frontend/src/state/agent-slice.ts`)
+  - [x] Models for chat messages (reference: `frontend/src/state/chat-slice.ts`)
+  - [x] Models for file state (reference: `frontend/src/state/file-state-slice.ts`)
+  - [x] Models for commands (reference: `frontend/src/state/command-slice.ts`)
+  - [x] Models for metrics (reference: `frontend/src/state/metrics-slice.ts`)
 
-- [ ] **Implement ObservableObjects for state containers**
-  - [ ] Create `AppState` as the main state container
-  - [ ] Implement `ConversationStore` for managing chat state
-  - [ ] Implement `FileStore` for managing file operations
-  - [ ] Implement `SettingsStore` for user preferences
-  - [ ] Implement `AuthStore` for authentication state
+- [x] **Implement ObservableObjects for state containers**
+  - [x] Create `AppState` as the main state container
+  - [x] Implement `ConversationStore` for managing chat state
+  - [x] Implement `FileStore` for managing file operations
+  - [x] Implement `SettingsStore` for user preferences
+  - [x] Implement `AuthStore` for authentication state
 
 ## 3. Networking Services
 
-- [ ] **Implement API client**
-  - [ ] Port API methods from `frontend/src/api/open-hands.ts` to Swift services
-  - [ ] Create Alamofire-based network client for REST API calls
-  - [ ] Implement response models and error handling
+- [x] **Implement API client**
+  - [x] Port API methods from `frontend/src/api/open-hands.ts` to Swift services
+  - [x] Create Alamofire-based network client for REST API calls
+  - [x] Implement response models and error handling
 
-- [ ] **WebSocket communication**
-  - [ ] Create a WebSocket service based on patterns in `frontend/src/context/ws-client-provider.tsx`
-  - [ ] Implement message parsing and event dispatching
-  - [ ] Set up reconnection logic and error handling
+- [x] **WebSocket communication**
+  - [x] Create a WebSocket service based on patterns in `frontend/src/context/ws-client-provider.tsx`
+  - [x] Implement message parsing and event dispatching
+  - [x] Set up reconnection logic and error handling
 
-- [ ] **GitHub integration**
-  - [ ] Port GitHub API functionality from `frontend/src/api/github.ts`
-  - [ ] Implement OAuth flow for GitHub authentication
-  - [ ] Create models for GitHub repositories and user data
+- [x] **GitHub integration**
+  - [x] Port GitHub API functionality from `frontend/src/api/github.ts`
+  - [x] Implement OAuth flow for GitHub authentication
+  - [x] Create models for GitHub repositories and user data
 
 ## 4. Main UI Components
 
