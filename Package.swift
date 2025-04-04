@@ -1,4 +1,4 @@
-// swift-tools-version:5.9
+// swift-tools-version:6.0
 import PackageDescription
 
 let package = Package(
@@ -25,9 +25,11 @@ let package = Package(
                 "Starscream",
                 "KeychainAccess",
                 "CodeEditor"
-            ]),
+            ],
+            path: "MacClient"), // Specify path to source files
         .testTarget(
             name: "MacClientTests",
-            dependencies: ["MacClient"]),
+            dependencies: ["MacClient"],
+            path: "MacClientTests"), // Specify path to test files
     ]
 )
