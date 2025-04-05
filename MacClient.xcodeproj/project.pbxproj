@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FDBF9CA92DA0AE48003F391F /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = FDBF9CA82DA0AE48003F391F /* Algorithms */; };
+		FDBF9CAC2DA0AFBE003F391F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FDBF9CAB2DA0AFBE003F391F /* Alamofire */; };
+		FDBF9CAE2DA0AFBE003F391F /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = FDBF9CAD2DA0AFBE003F391F /* AlamofireDynamic */; };
+		FDBF9CB12DA0AFEE003F391F /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = FDBF9CB02DA0AFEE003F391F /* Starscream */; };
+		FDBF9CB42DA0B02B003F391F /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = FDBF9CB32DA0B02B003F391F /* KeychainAccess */; };
+		FDBF9CB72DA0B04B003F391F /* CodeEditor in Frameworks */ = {isa = PBXBuildFile; productRef = FDBF9CB62DA0B04B003F391F /* CodeEditor */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		FDD90C8C2D90B81200428C3F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +61,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDBF9CA92DA0AE48003F391F /* Algorithms in Frameworks */,
+				FDBF9CAE2DA0AFBE003F391F /* AlamofireDynamic in Frameworks */,
+				FDBF9CAC2DA0AFBE003F391F /* Alamofire in Frameworks */,
+				FDBF9CB12DA0AFEE003F391F /* Starscream in Frameworks */,
+				FDBF9CB72DA0B04B003F391F /* CodeEditor in Frameworks */,
+				FDBF9CB42DA0B02B003F391F /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +127,12 @@
 			);
 			name = MacClient;
 			packageProductDependencies = (
+				FDBF9CA82DA0AE48003F391F /* Algorithms */,
+				FDBF9CAB2DA0AFBE003F391F /* Alamofire */,
+				FDBF9CAD2DA0AFBE003F391F /* AlamofireDynamic */,
+				FDBF9CB02DA0AFEE003F391F /* Starscream */,
+				FDBF9CB32DA0B02B003F391F /* KeychainAccess */,
+				FDBF9CB62DA0B04B003F391F /* CodeEditor */,
 			);
 			productName = MacClient;
 			productReference = FDD90C752D90B81100428C3F /* MacClient.app */;
@@ -170,8 +191,11 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1620;
-				LastUpgradeCheck = 1620;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					FDD90C742D90B81100428C3F = {
 						CreatedOnToolsVersion = 16.2;
@@ -195,6 +219,13 @@
 			);
 			mainGroup = FDD90C6C2D90B81100428C3F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FDBF9CA72DA0AE48003F391F /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				FDBF9CAA2DA0AFBE003F391F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FDBF9CAF2DA0AFEE003F391F /* XCRemoteSwiftPackageReference "Starscream" */,
+				FDBF9CB22DA0B02B003F391F /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				FDBF9CB52DA0B04B003F391F /* XCRemoteSwiftPackageReference "CodeEditor" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FDD90C762D90B81100428C3F /* Products */;
 			projectDirPath = "";
@@ -303,6 +334,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -366,6 +398,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -396,6 +429,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MacClient/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -421,6 +455,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MacClient/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -443,6 +478,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
@@ -460,6 +496,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
@@ -476,6 +513,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = enyst.MacClientUITests;
@@ -491,6 +529,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = enyst.MacClientUITests;
@@ -541,6 +580,82 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FDBF9CA72DA0AE48003F391F /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
+		FDBF9CAA2DA0AFBE003F391F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		FDBF9CAF2DA0AFEE003F391F /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.8;
+			};
+		};
+		FDBF9CB22DA0B02B003F391F /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		FDBF9CB52DA0B04B003F391F /* XCRemoteSwiftPackageReference "CodeEditor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ZeeZide/CodeEditor.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FDBF9CA82DA0AE48003F391F /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDBF9CA72DA0AE48003F391F /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+		FDBF9CAB2DA0AFBE003F391F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDBF9CAA2DA0AFBE003F391F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		FDBF9CAD2DA0AFBE003F391F /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDBF9CAA2DA0AFBE003F391F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+		FDBF9CB02DA0AFEE003F391F /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDBF9CAF2DA0AFEE003F391F /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+		FDBF9CB32DA0B02B003F391F /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDBF9CB22DA0B02B003F391F /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		FDBF9CB62DA0B04B003F391F /* CodeEditor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDBF9CB52DA0B04B003F391F /* XCRemoteSwiftPackageReference "CodeEditor" */;
+			productName = CodeEditor;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FDD90C6D2D90B81100428C3F /* Project object */;
 }
