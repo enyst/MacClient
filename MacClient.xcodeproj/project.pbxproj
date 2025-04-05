@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD06ECE12DA1200C007F7BDA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FD06ECE02DA1200C007F7BDA /* Alamofire */; };
 		FDBF9CA92DA0AE48003F391F /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = FDBF9CA82DA0AE48003F391F /* Algorithms */; };
-		FDBF9CAC2DA0AFBE003F391F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FDBF9CAB2DA0AFBE003F391F /* Alamofire */; };
 		FDBF9CB12DA0AFEE003F391F /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = FDBF9CB02DA0AFEE003F391F /* Starscream */; };
 		FDBF9CB42DA0B02B003F391F /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = FDBF9CB32DA0B02B003F391F /* KeychainAccess */; };
 		FDBF9CB72DA0B04B003F391F /* CodeEditor in Frameworks */ = {isa = PBXBuildFile; productRef = FDBF9CB62DA0B04B003F391F /* CodeEditor */; };
@@ -74,8 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD06ECE12DA1200C007F7BDA /* Alamofire in Frameworks */,
 				FDBF9CA92DA0AE48003F391F /* Algorithms in Frameworks */,
-				FDBF9CAC2DA0AFBE003F391F /* Alamofire in Frameworks */,
 				FDBF9CB12DA0AFEE003F391F /* Starscream in Frameworks */,
 				FDBF9CB72DA0B04B003F391F /* CodeEditor in Frameworks */,
 				FDBF9CB42DA0B02B003F391F /* KeychainAccess in Frameworks */,
@@ -140,10 +140,10 @@
 			name = MacClient;
 			packageProductDependencies = (
 				FDBF9CA82DA0AE48003F391F /* Algorithms */,
-				FDBF9CAB2DA0AFBE003F391F /* Alamofire */,
 				FDBF9CB02DA0AFEE003F391F /* Starscream */,
 				FDBF9CB32DA0B02B003F391F /* KeychainAccess */,
 				FDBF9CB62DA0B04B003F391F /* CodeEditor */,
+				FD06ECE02DA1200C007F7BDA /* Alamofire */,
 			);
 			productName = MacClient;
 			productReference = FDD90C752D90B81100428C3F /* MacClient.app */;
@@ -232,10 +232,10 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				FDBF9CA72DA0AE48003F391F /* XCRemoteSwiftPackageReference "swift-algorithms" */,
-				FDBF9CAA2DA0AFBE003F391F /* XCRemoteSwiftPackageReference "Alamofire" */,
 				FDBF9CAF2DA0AFEE003F391F /* XCRemoteSwiftPackageReference "Starscream" */,
 				FDBF9CB22DA0B02B003F391F /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 				FDBF9CB52DA0B04B003F391F /* XCRemoteSwiftPackageReference "CodeEditor" */,
+				FD06ECDF2DA1200C007F7BDA /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FDD90C762D90B81100428C3F /* Products */;
@@ -561,7 +561,7 @@
 				FDD90C9E2D90B81200428C3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		FDD90C9F2D90B81200428C3F /* Build configuration list for PBXNativeTarget "MacClient" */ = {
 			isa = XCConfigurationList;
@@ -570,7 +570,7 @@
 				FDD90CA12D90B81200428C3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		FDD90CA22D90B81200428C3F /* Build configuration list for PBXNativeTarget "MacClientTests" */ = {
 			isa = XCConfigurationList;
@@ -579,7 +579,7 @@
 				FDD90CA42D90B81200428C3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		FDD90CA52D90B81200428C3F /* Build configuration list for PBXNativeTarget "MacClientUITests" */ = {
 			isa = XCConfigurationList;
@@ -588,25 +588,25 @@
 				FDD90CA72D90B81200428C3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		FD06ECDF2DA1200C007F7BDA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
 		FDBF9CA72DA0AE48003F391F /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-algorithms.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.2.1;
-			};
-		};
-		FDBF9CAA2DA0AFBE003F391F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.10.2;
 			};
 		};
 		FDBF9CAF2DA0AFEE003F391F /* XCRemoteSwiftPackageReference "Starscream" */ = {
@@ -636,15 +636,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FD06ECE02DA1200C007F7BDA /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD06ECDF2DA1200C007F7BDA /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		FDBF9CA82DA0AE48003F391F /* Algorithms */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FDBF9CA72DA0AE48003F391F /* XCRemoteSwiftPackageReference "swift-algorithms" */;
 			productName = Algorithms;
-		};
-		FDBF9CAB2DA0AFBE003F391F /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FDBF9CAA2DA0AFBE003F391F /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
 		};
 		FDBF9CB02DA0AFEE003F391F /* Starscream */ = {
 			isa = XCSwiftPackageProductDependency;
