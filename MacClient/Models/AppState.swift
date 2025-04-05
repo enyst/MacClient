@@ -37,6 +37,7 @@ class ConversationStore: ObservableObject {
     @Published var conversations: [String: Conversation] = [:]
     @Published var currentConversationId: String? = nil
     @Published var isLoadingMessages: Bool = false
+    @Published var messagesByConversationId: [String: [ChatMessage]] = [:]
     
     // Add more conversation-related state and methods here
 }
