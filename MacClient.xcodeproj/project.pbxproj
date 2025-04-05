@@ -37,9 +37,23 @@
 		FDD90C952D90B81200428C3F /* MacClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		FD06EB6B2DA0BB1D007F7BDA /* Exceptions for "MacClient" folder in "Compile Sources" phase from "MacClient" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = FDD90C712D90B81100428C3F /* Sources */;
+			membershipExceptions = (
+				Assets.xcassets,
+				"Preview Content/Preview Assets.xcassets",
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		FDD90C772D90B81100428C3F /* MacClient */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FD06EB6B2DA0BB1D007F7BDA /* Exceptions for "MacClient" folder in "Compile Sources" phase from "MacClient" target */,
+			);
 			path = MacClient;
 			sourceTree = "<group>";
 		};
