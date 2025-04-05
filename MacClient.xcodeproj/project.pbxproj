@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		FDBF9CA92DA0AE48003F391F /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = FDBF9CA82DA0AE48003F391F /* Algorithms */; };
 		FDBF9CAC2DA0AFBE003F391F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FDBF9CAB2DA0AFBE003F391F /* Alamofire */; };
-		FDBF9CAE2DA0AFBE003F391F /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = FDBF9CAD2DA0AFBE003F391F /* AlamofireDynamic */; };
 		FDBF9CB12DA0AFEE003F391F /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = FDBF9CB02DA0AFEE003F391F /* Starscream */; };
 		FDBF9CB42DA0B02B003F391F /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = FDBF9CB32DA0B02B003F391F /* KeychainAccess */; };
 		FDBF9CB72DA0B04B003F391F /* CodeEditor in Frameworks */ = {isa = PBXBuildFile; productRef = FDBF9CB62DA0B04B003F391F /* CodeEditor */; };
@@ -62,7 +61,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDBF9CA92DA0AE48003F391F /* Algorithms in Frameworks */,
-				FDBF9CAE2DA0AFBE003F391F /* AlamofireDynamic in Frameworks */,
 				FDBF9CAC2DA0AFBE003F391F /* Alamofire in Frameworks */,
 				FDBF9CB12DA0AFEE003F391F /* Starscream in Frameworks */,
 				FDBF9CB72DA0B04B003F391F /* CodeEditor in Frameworks */,
