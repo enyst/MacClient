@@ -92,10 +92,9 @@ class ConversationService {
         return apiService.post(endpoint: "conversations/\(conversationId)/messages", parameters: parameters)
             .map { (response: MessageResponse) -> ChatMessage in
                 // Update the conversation store
-                if var conversation: Conversation = self.appState.conversationStore.conversations[conversationId] {
-                    conversation.messages.append(response.message)
-                    self.appState.conversationStore.conversations[conversationId] = conversation
-                }
+                // Append the new message to the messagesByConversationId dictionary
+                // Ensure the array exists for the conversationId, creating it if necessary
+                self.appState.conversationStore.messagesByConversationId[conversationId, default: []].append(response.message)
                 
                 return response.message
             }
@@ -139,10 +138,9 @@ class ConversationService {
         }
         
         // Update the conversation store
-        if var conversation: Conversation = appState.conversationStore.conversations[conversationId] {
-            conversation.messages.append(newMessage)
-            appState.conversationStore.conversations[conversationId] = conversation
-        }
+        // Append the new message to the messagesByConversationId dictionary
+        // Ensure the array exists for the conversationId, creating it if necessary
+        appState.conversationStore.messagesByConversationId[conversationId, default: []].append(newMessage)
     }
     
     /// Handle a typing indicator from the WebSocket
