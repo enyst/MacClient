@@ -1,4 +1,7 @@
 # MacClient SwiftUI Migration Plan
+## Project Goal
+
+This document outlines the plan to migrate the frontend functionality of the OpenHands project (originally located in the `playground` repository at `/Users/enyst/repos/odie/workspace/playground` or [https://github.com/enyst/playground](https://github.com/enyst/playground)) to a native macOS application using SwiftUI. The MacClient application will interact with the existing backend services provided by the `playground` project.
 
 ## Tips for LLM Implementation
 
