@@ -141,7 +141,6 @@
 			packageProductDependencies = (
 				FDBF9CA82DA0AE48003F391F /* Algorithms */,
 				FDBF9CAB2DA0AFBE003F391F /* Alamofire */,
-				FDBF9CAD2DA0AFBE003F391F /* AlamofireDynamic */,
 				FDBF9CB02DA0AFEE003F391F /* Starscream */,
 				FDBF9CB32DA0B02B003F391F /* KeychainAccess */,
 				FDBF9CB62DA0B04B003F391F /* CodeEditor */,
@@ -646,11 +645,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FDBF9CAA2DA0AFBE003F391F /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		FDBF9CAD2DA0AFBE003F391F /* AlamofireDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FDBF9CAA2DA0AFBE003F391F /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = AlamofireDynamic;
 		};
 		FDBF9CB02DA0AFEE003F391F /* Starscream */ = {
 			isa = XCSwiftPackageProductDependency;
