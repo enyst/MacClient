@@ -67,27 +67,9 @@ class AuthStore: ObservableObject {
     // Add more auth-related state and methods here
 }
 
-// Placeholder models - will be expanded later
-struct Conversation {
-    var id: String
-    var messages: [Message] = []
-    var createdAt: Date = Date()
-    var updatedAt: Date = Date()
-}
 
-struct Message {
-    var id: String
-    var content: String
-    var sender: MessageSender
-    var timestamp: Date = Date()
-}
 
-enum MessageSender {
-    case user
-    case agent
-}
-
-struct FileItem {
+struct FileItem: Codable {
     var path: String
     var name: String
     var isDirectory: Bool
@@ -95,7 +77,7 @@ struct FileItem {
     var modifiedAt: Date
 }
 
-struct User {
+struct User: Codable {
     var id: String
     var username: String
     var avatarUrl: String?

@@ -77,6 +77,7 @@ class GitHubService: ObservableObject {
                 self?.token = response.accessToken
                 return
             }
+            .mapError { $0 as Error } // Map AFError to Error
             .eraseToAnyPublisher()
     }
     

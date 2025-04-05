@@ -84,15 +84,15 @@ class ConversationService {
     ///   - conversationId: The conversation ID
     ///   - content: The message content
     /// - Returns: A publisher that emits a message or an error
-    func sendMessage(conversationId: String, content: String) -> AnyPublisher<Message, Error> {
+    func sendMessage(conversationId: String, content: String) -> AnyPublisher<ChatMessage, Error> {
         let parameters: [String: Any] = [
             "content": content
         ]
         
         return apiService.post(endpoint: "conversations/\(conversationId)/messages", parameters: parameters)
-            .map { (response: MessageResponse) -> Message in
+            .map { (response: MessageResponse) -> ChatMessage in
                 // Update the conversation store
-                if var conversation = self.appState.conversationStore.conversations[conversationId] {
+                if var conversation: Conversation = self.appState.conversationStore.conversations[conversationId] {
                     conversation.messages.append(response.message)
                     self.appState.conversationStore.conversations[conversationId] = conversation
                 }
@@ -133,13 +133,13 @@ class ConversationService {
     private func handleNewMessage(_ message: WebSocketMessage) {
         guard let conversationId = message.payload["conversationId"]?.value as? String,
               let messageData = try? JSONSerialization.data(withJSONObject: message.payload["message"]?.value as? [String: Any] ?? [:]),
-              let newMessage = try? JSONDecoder().decode(Message.self, from: messageData) else {
+              let newMessage = try? JSONDecoder().decode(ChatMessage.self, from: messageData) else {
             print("Failed to parse new message")
             return
         }
         
         // Update the conversation store
-        if var conversation = appState.conversationStore.conversations[conversationId] {
+        if var conversation: Conversation = appState.conversationStore.conversations[conversationId] {
             conversation.messages.append(newMessage)
             appState.conversationStore.conversations[conversationId] = conversation
         }
@@ -170,5 +170,5 @@ struct ConversationResponse: Decodable {
 
 /// Response model for message
 struct MessageResponse: Decodable {
-    let message: Message
+    let message: ChatMessage
 }
