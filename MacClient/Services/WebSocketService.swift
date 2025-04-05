@@ -67,7 +67,7 @@ class WebSocketService: ObservableObject {
 
 // MARK: - WebSocketDelegate
 extension WebSocketService: WebSocketDelegate {
-    func didReceive(event: WebSocketEvent, client: WebSocket) {
+    func didReceive(event: WebSocketEvent, client: any WebSocketClient) {
         switch event {
         case .connected(_):
             isConnected = true
@@ -102,6 +102,11 @@ extension WebSocketService: WebSocketDelegate {
         case .error(let error):
             isConnected = false
             print("WebSocket error: \(String(describing: error))")
+case .peerClosed:
+            // Handle peer closing the connection if needed
+            isConnected = false
+            print("WebSocket peer closed connection")
+            break
         }
     }
     
@@ -146,7 +151,7 @@ struct WebSocketMessage: Codable {
 
 /// Type-erasing wrapper for Codable values
 struct AnyCodable: Codable {
-    private let value: Any
+    public let value: Any
     
     init(_ value: Any) {
         self.value = value
